@@ -12,12 +12,13 @@ class Televisao:
         self.__tamanho = tamanho
         self.__marca = marca
     
+    @property
     def get_atributes(self):
-        return f'{self.__tamanho} {self.__marca}'
+        return f'Tamanho: {self.__tamanho}\nMarca: {self.__marca}'
 
 tv1 = Televisao('Samsung', '32')
 tv2 = Televisao('Sony', '43')
-print(tv1.get_atributes(), tv2.get_atributes())
+print(tv1.get_atributes, tv2.get_atributes)
 
 # 3)
 class Televisao:
@@ -27,8 +28,9 @@ class Televisao:
         self.__tamanho = tamanho
         self.__marca = marca
 
+    @property
     def get_atributes(self):
-        return f'{self.__tamanho} {self.__marca} {self.__canal}'
+        return f'Tamanho: {self.__tamanho}\nTamanho: {self.__marca}\nCanal altual: {self.__canal}'
 
     def mudar_canal_para_cima(self):
         self.__canal += 1
@@ -46,8 +48,9 @@ class Televisao:
         self.__tamanho = tamanho
         self.__marca = marca
 
+    @property
     def get_atributes(self):
-        return f'{self.__tamanho} {self.__marca} {self.__canal}'
+        return f'Tamanho: {self.__tamanho}\nTamanho: {self.__marca}\nCanal altual: {self.__canal}'
 
     def mudar_canal_para_cima(self):
         if self.__canal == self.__canal_maximo:
@@ -71,8 +74,9 @@ class Televisao:
         self.__tamanho = tamanho
         self.__marca = marca
 
+    @property
     def get_atributes(self):
-        return f'{self.__tamanho} {self.__marca} {self.__canal}'
+        return f'Tamanho: {self.__tamanho}\nTamanho: {self.__marca}\nCanal altual: {self.__canal}'
 
     def mudar_canal_para_cima(self):
         if self.__canal == self.__canal_maximo:
@@ -96,8 +100,9 @@ class Televisao:
         self.__tamanho = tamanho
         self.__marca = marca
 
+    @property
     def get_atributes(self):
-        return f'{self.__tamanho} {self.__marca} {self.__canal} {self.__canal_minimo} {self.__canal_maximo}'
+        return f'Tamanho: {self.__tamanho}\nTamanho: {self.__marca}\nCanal altual: {self.__canal}\nCanal minimo: {self.__canal_minimo}\nCanal máximo:{self.__canal_maximo}'
 
     def mudar_canal_para_cima(self):
         if self.__canal == self.__canal_maximo:
@@ -112,9 +117,9 @@ class Televisao:
             self.__canal -= 1
 
 tv1 = Televisao('43', 'Samsung', 5, canal_minimo=1, canal_maximo=20)
-print(tv1.get_atributes())
+print(tv1.get_atributes)
 tv2 = Televisao('32', 'Sony', 10, canal_minimo=3, canal_maximo=50)
-print(tv2.get_atributes())
+print(tv2.get_atributes)
 
 # 7)
 class Cidade:
@@ -122,11 +127,13 @@ class Cidade:
         self.__nome = nome
         self.__populacao = populacao
 
+    @property
     def ver_populacao_da_cidade(self):
         return self.__populacao
 
+    @property
     def ver_nome(self):
-        return self.__nome
+        return f'{self.__nome}'
 
 class Estado:
     def __init__(self, nome, sigla, *cidades):
@@ -137,14 +144,24 @@ class Estado:
     def calcular_populacao_total(self):
         populacao_total = 0
         for cidade in self.__cidades:
-            populacao_total += cidade.ver_populacao_da_cidade()
-        return populacao_total
+            populacao_total += int(cidade.ver_populacao_da_cidade)
+        return f'\nPopulação total do estado:\n{populacao_total}'
 
+    @property
+    def nome_do_estado(self):
+        return self.__nome
+
+    @property
+    def sigla_do_estado(self):
+        return self.__sigla
+
+    @property
     def ver_cidades(self):
         cidades_info = []
         for cidade in self.__cidades:
-            cidades_info.append(f'{cidade.ver_nome()} {cidade.ver_populacao_da_cidade()}')
-        return '\n'.join(cidades_info)
+            cidades_info.append(f'{cidade.ver_nome} {cidade.ver_populacao_da_cidade}')
+        cidades_pertencentes_ao_estado = '\n'.join(cidades_info)
+        return f'Cidades pertencentes a {self.nome_do_estado} - {self.sigla_do_estado}:\n{cidades_pertencentes_ao_estado}'
 
 florianopolis = Cidade('Florianópolis', 300)
 chapeco = Cidade('Chapecó', 150)
@@ -158,14 +175,14 @@ manaus = Cidade('Manaus', 180)
 manacapuru = Cidade('Manacapuru', 100)
 amazonas = Estado('Amazonas', 'AM', manaus, manacapuru)
 
-print(santa_catarina.ver_cidades())
-print(santa_catarina.calcular_populacao_total())
+estados = [
+    santa_catarina,
+    minas_gerais,
+    amazonas
+]
 
-print(minas_gerais.ver_cidades())
-print(minas_gerais.calcular_populacao_total())
-
-print(amazonas.ver_cidades())
-print(amazonas.calcular_populacao_total())
+for estado in estados:
+    print(estado.ver_cidades, estado.calcular_populacao_total())
 
 # 8)
 import math
@@ -279,7 +296,56 @@ class Fracao:
         self.__denominador = denominador
 
     def somar(self, fracao_a_ser_somada):
+        if self.denominador == fracao_a_ser_somada.denominador:
+            numerador = self.numerador + fracao_a_ser_somada.numerador
+            return Fracao(numerador, self.denominador)
+        else:
+            mmc = math.lcm(self.denominador, fracao_a_ser_somada.denominador)
+            novo_numerador = int((mmc / self.denominador) * self.numerador + (mmc / fracao_a_ser_somada.denominador) * fracao_a_ser_somada.numerador)
+            self.denominador = mmc
+            return Fracao(novo_numerador, self.denominador)
+
+    def subtrair(self, fracao_a_ser_subtraida):
+        if self.denominador == fracao_a_ser_subtraida.denominador:
+            numerador = self.numerador - fracao_a_ser_subtraida.numerador
+            return Fracao(numerador, self.denominador)
+        else:
+            mmc = math.lcm(self.denominador, fracao_a_ser_subtraida.denominador)
+            novo_numerador = int((mmc / self.denominador) * self.numerador) - int((mmc / fracao_a_ser_subtraida.denominador) * fracao_a_ser_subtraida.numerador)
+            self.denominador = mmc
+            return Fracao(novo_numerador, self.denominador)
+
+    def multiplicar(self, fracao_a_ser_multiplicada):
+        self.numerador *= fracao_a_ser_multiplicada.numerador
+        self.denominador *= fracao_a_ser_multiplicada.denominador
+        return Fracao(self.numerador, self.denominador)
+
+    def dividir(self, fracao_a_ser_dividida):
+        novo_numerador = fracao_a_ser_dividida.inverter_fracao().numerador * self.numerador
+        novo_denominador = fracao_a_ser_dividida.denominador * self.denominador
+        return Fracao(novo_numerador, novo_denominador)
+
+    def inverter_fracao(self):
+        variavel_temporaria = self.numerador
+        self.numerador = self.denominador
+        self.denominador = variavel_temporaria
+        return self
+
+    def somar_numeradores(self, fracao_a_ser_somada):
+        self.numerador += fracao_a_ser_somada
+        return Fracao(self.numerador, self.denominador)
+
+    def calcular_valor_real(self):
+        valor_real = f'{self.numerador / self.denominador}'
+        return float(valor_real)
+
+    @classmethod
+    def criar_fracao_a_partir_de_um_numero_real(cls, numero_real):
         pass
+        # sei la como que eu vou fazer isso, mas só falta isso pra acabar
+    @property
+    def mostrar_fracao(self):
+        return f'{self.numerador}/{self.denominador}'
 
     @property
     def numerador(self):
@@ -288,3 +354,19 @@ class Fracao:
     @property
     def denominador(self):
         return self.__denominador
+
+    @denominador.setter
+    def denominador(self, novo_denominador):
+        self.__denominador = novo_denominador
+
+    @numerador.setter 
+    def numerador(self, novo_numerador):
+        self.__numerador = novo_numerador
+
+
+fracao1 = Fracao(78, 978)
+print(fracao1.mostrar_fracao)
+fracao2 = Fracao(13, 9)
+print(fracao2.mostrar_fracao)
+# na hora de testar, testar uma operação por vez
+print(fracao1.calcular_valor_real())
