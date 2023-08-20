@@ -55,7 +55,7 @@ class Stock:
             return self.__avaliable_books
 
     # não entendi o que queria dizer "(outro software)" no enunciado da questão
-    # então acabei fazendo um método simples para realizar as buscas de livros
+    # então acabei fazendo um simples método para realizar as buscas de livros
     def search(self, search_method:str, search:str):
         if search_method.lower() == 'titulo':
             occurrences = 0
@@ -140,8 +140,3 @@ print(library_stock.search('auTor', 'Lewis Carroll'))
 print(library_stock.all_books)
 print(library_stock.borrowed_books)
 print(library_stock.avaliable_books)
-
-
-# Está ok, tudo funcionando, porém, falta adicionar um mecanismo de pesquisa, para que os usuários possam encontrar
-# o livro que buscam pelo seu título, ou autor, ou ano, etc... Só não vou implementar agora porque não entendi o que quer dizer
-# "outro software" no enunciado do exercício
