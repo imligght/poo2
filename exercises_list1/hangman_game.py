@@ -1,83 +1,85 @@
-class SecretWord:
+class HangMan:
 
-    def __init__(self, theme:str, word:str):
+    def __init__(self, word:str):
         self.__word = word
-        self.__theme = theme
+        self.__gallow = self.draw_gallow()
+        self.__tempted_letter = ''
+        self.__attempts_left = 6
+
+    @property
+    def draw_doll(self):
+        if self.__attempts_left == 6:
+            pass
+
+    @property
+    def attempts_left(self):
+        return self.__attempts_left
+
+    @property
+    def gallow(self):
+        return self.__gallow
 
     @property
     def word(self):
         return self.__word
 
     @property
-    def theme(self):
-        return self.__theme
-
-
-class Game:
-
-    def __init__(self, secret_word_obj):
-        self.__tempted_letter = ''
-        self.__draw = ''
-        self.__secret_word = secret_word_obj.word
-        self.__secret_word_letters = [letter for letter in secret_word_obj.word]
-        self.__hit_letters = []
-
-    @property
-    def hit_letters(self):
-        return self.__hit_letters
-
-    @property
-    def letters(self):
-        return self.__secret_word_letters
-
-    @property
     def lenght(self):
-        return len(self.__secret_word.word)
+        return len(self.__word)
 
-    @property
-    def draw(self):
-        return self.__draw
+    def draw_gallow(self):
+        gallow = ''
+        for _ in range(self.lenght):
+            gallow += '_'
+        self.__gallow = gallow
+        return self.__gallow
 
+    def draw_letter_in_position(self, position:int):
+        gallow_list = list(self.__gallow)  # Convertendo a string em uma lista mutável
+        gallow_list[position] = self.__tempted_letter
+        self.__gallow = ''.join(gallow_list)  # Convertendo a lista de volta para uma string
+        return self.__gallow
+    
+    def trying(self, tempted_letter:str):
+        self.__tempted_letter = tempted_letter
+        if self.__tempted_letter not in self.word:
+            self.__attempts_left -= 1
+        else:
+            for i, letter in enumerate(self.__word):
+                if tempted_letter == letter:
+                    self.draw_letter_in_position(i)
+        self.won()
+        self.lost()
+                
 
-    def position(self):
-        for letter in range(self.lenght):
-            if letter == self.__secret_word[letter]:
-                self.__draw = self.__tempted_letter
+    def won(self):
+        if not '_' in self.__gallow:
+            self.won_finish()
 
-    def draw_word(self):
-        word_lenght = len(self.letters)
-        draw = ''
-        for letter in range(word_lenght):
-            draw += '_'
-        return draw
+    def lost(self):
+        if self.__attempts_left <= 0:
+            self.lost_finish()
 
-    def hit(self):
-        for letter in self.letters:
-            self.letters.remove(letter)
-            self.__hit_letters.append(letter)
-        return self.__hit_letters
+    def won_finish(self):
+        won_message = 'Parabéns carinha, você ganhou! Toma uma frô:🌸'
+        print(won_message)
 
-    def trying(self, letter):
-        self.__tempted_letter = letter
-        # verifico se a letra que o jogador solicitou está na lista das letras
-        if self.__tempted_letter in self.__secret_word_letters:
-            # se sim, começo um processo para ver se essa letra aparece mais de uma vez
-            amount_letter_instances = 0
-            for letter in range(self.lenght):
-                if self.__tempted_letter in self.__secret_word_letters:
-                    amount_letter_instances += 1
-            for i in range(amount_letter_instances):
-                self.position()
+    def lost_finish(self):
+        lost_message = 'Ah, você perdeu, que chato. Mas não desanima não mano *soquinho*👊'
+        print(lost_message)
 
-            
-        
-
-
-
-
-
-
-
-word1 = SecretWord('fruta', 'banana')
-print(word1.word)
-game1 = Game(word1)
+# iniciando uma partida com 'banana' sendo a palavra secreta
+hangman1 = HangMan('banana')
+# tentativas do jogador, neste exemplo o jogador perde
+hangman1.trying('b')
+hangman1.trying('i')
+hangman1.trying('o')
+hangman1.trying('a')
+hangman1.trying('u')
+hangman1.trying('j')
+hangman1.trying('r')
+# comente a próxima linha e descomente a seguinte para ver um exemplo em que o jogador ganha
+hangman1.trying('m')
+#hangman1.trying('n')
+print(hangman1.gallow)
+print(hangman1.attempts_left)
