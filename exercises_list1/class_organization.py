@@ -5,7 +5,20 @@ class Student:
         self.__registration = registration
         self.__grades = list[float]
         self.__school_days = 250
+        self.__missed_days = missed_days
         self.__frequency =  float
+
+    @property
+    def frequency(self):
+        return self.__frequency
+    
+    @frequency.setter
+    def frequency(self, frequency):
+        self.__frequency = frequency
+
+    def calculate_frequency(self, missed_days:int):
+        self.__frequency = ((self.school_days - missed_days) / self.school_days)
+
 
     @property
     def school_days(self):
