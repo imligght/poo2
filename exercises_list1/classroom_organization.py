@@ -6,7 +6,14 @@ class Student:
         self.__grades = []
         self.__school_days = 250
         self.__missed_days = 0
-        self.__frequency = ((self.school_days - self.missed_days) / self.school_days) * 100
+
+    def calculate_frequency(self):
+        frequency = ((self.school_days - self.__missed_days) / self.school_days) * 100
+        return frequency
+        
+
+    def register_missed_days(self, missed_days):
+        self.__missed_days = missed_days
 
     def register_grade(self, grades:list):
         for grade in grades:
@@ -20,22 +27,15 @@ class Student:
             for grade in list(self.__grades):
                 average += int(grade)
             average = average / len(self.__grades)
-        return f'A média de {self.name} é {average}'
+        return f'A média de {self.name} é {average:.1f}'
 
     @property
     def missed_days(self):
         return self.__missed_days
 
-    @property
-    def frequency(self):
-        return f'{self.__frequency}%'
-
-    def add_missed_days(self, missed_days):
+    @missed_days.setter
+    def missed_days(self, missed_days):
         self.__missed_days = missed_days
-
-    @frequency.setter
-    def frequency(self, frequency):
-        self.__frequency = frequency
 
     @property
     def school_days(self):
@@ -54,7 +54,7 @@ class Student:
         return self.__registration
 
     def __repr__(self):
-        return f'Aluno(a): {self.name}\nFrequência: {self.frequency}\nNotas: {self.grades}'
+        return f'Aluno(a): {__self.name}\nDias ausênte: {self.__missed_days}\nNotas: {self.__grades}'
 
 class Classroom: 
 
@@ -151,7 +151,8 @@ for aluno in alunos_a_serem_matriculados:
         turma1.add_student_to_the_class(aluno)
 
 lista_de_notas = [4.5, 7.5, 9.0]
-
+# para fins de simplicidade e facilidade de compreensão, atribuí a mesma lista de notas para todos os alunos instanciados
+# porém, elas sem problema algum poderiam ser nostas diferentes
 aluno1.register_grade(lista_de_notas)
 aluno2.register_grade(lista_de_notas)
 aluno3.register_grade(lista_de_notas)
@@ -159,9 +160,12 @@ aluno4.register_grade(lista_de_notas)
 aluno5.register_grade(lista_de_notas)
 aluno6.register_grade(lista_de_notas)
 
+aluno1.register_missed_days(10)
+
 print(turma1)
 print(turma2)
 
 # criei um método que calcula a média das notas de um aluno
 # exemplo de uso:
 print(aluno1.calculate_average())
+print(aluno1.calculate_frequency())
