@@ -9,7 +9,7 @@ class Student:
 
     def calculate_frequency(self):
         frequency = ((self.school_days - self.__missed_days) / self.school_days) * 100
-        return frequency
+        return f'A frequência de {self.__name} é {frequency}%'
         
 
     def register_missed_days(self, missed_days):
@@ -54,7 +54,7 @@ class Student:
         return self.__registration
 
     def __repr__(self):
-        return f'Aluno(a): {__self.name}\nDias ausênte: {self.__missed_days}\nNotas: {self.__grades}'
+        return f'Aluno(a): {self.__name}\nDias ausênte: {self.__missed_days}\nNotas: {self.__grades}'
 
 class Classroom: 
 
