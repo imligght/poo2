@@ -31,7 +31,7 @@ class Student:
 
     @property
     def missed_days(self):
-        return self.__missed_days
+        return f'O aluno faltou {self.__missed_days} dia(s)'
 
     @missed_days.setter
     def missed_days(self, missed_days):
@@ -168,4 +168,5 @@ print(turma2)
 # criei um método que calcula a média das notas de um aluno
 # exemplo de uso:
 print(aluno1.calculate_average())
+print(aluno1.missed_days)
 print(aluno1.calculate_frequency())
