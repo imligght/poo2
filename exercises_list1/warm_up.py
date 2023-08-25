@@ -291,19 +291,19 @@ for forma in formas:
 
 # 10)
 class Fracao:
-    def __init__(self, numerador:int, denominador:int):
+    def __init__(self, numerador:int, denominador:int=1):
         self.__numerador = numerador
         self.__denominador = denominador
 
     def somar(self, fracao_a_ser_somada):
         if self.denominador == fracao_a_ser_somada.denominador:
-            numerador = self.numerador + fracao_a_ser_somada.numerador
+            numerador = self.__numerador + fracao_a_ser_somada.__numerador
             return Fracao(numerador, self.denominador)
         else:
-            mmc = math.lcm(self.denominador, fracao_a_ser_somada.denominador)
-            novo_numerador = int((mmc / self.denominador) * self.numerador + (mmc / fracao_a_ser_somada.denominador) * fracao_a_ser_somada.numerador)
-            self.denominador = mmc
-            return Fracao(novo_numerador, self.denominador)
+            mmc = math.lcm(self.__denominador, fracao_a_ser_somada.__denominador)
+            novo_numerador = int((mmc / self.__denominador) * self.__numerador + (mmc / fracao_a_ser_somada.__denominador) * fracao_a_ser_somada.__numerador)
+            self.__denominador = mmc
+            return Fracao(novo_numerador, self.__denominador)
 
     def subtrair(self, fracao_a_ser_subtraida):
         if self.denominador == fracao_a_ser_subtraida.denominador:
@@ -327,30 +327,35 @@ class Fracao:
 
     def inverter_fracao(self):
         variavel_temporaria = self.numerador
-        self.numerador = self.denominador
-        self.denominador = variavel_temporaria
+        self.__numerador = self.__denominador
+        self.__denominador = variavel_temporaria
         return self
 
-    def somar_numeradores(self, fracao_a_ser_somada):
-        self.numerador += fracao_a_ser_somada
-        return Fracao(self.numerador, self.denominador)
-
     def calcular_valor_real(self):
-        valor_real = f'{self.numerador / self.denominador}'
+        valor_real = f'{self.__numerador / self.__denominador}'
         return float(valor_real)
+
+    def simplificar_fracao(self):
+        max_divisor_comum = math.gcd(self.__numerador, self.__denominador)
+        self.__numerador //= max_divisor_comum
+        self.__denominador //= max_divisor_comum
+        return self
 
     @classmethod
     def criar_fracao_a_partir_de_um_numero_real(cls, numero_real):
-        pass
-        # sei la como que eu vou fazer isso, mas só falta isso pra acabar
+        numeros_apos_a_virgula = len(str(numero_real).split('.')[1])
+        numerador = int(numero_real * 10 ** numeros_apos_a_virgula)
+        denominador = int(10 ** numeros_apos_a_virgula)
+        return Fracao(numerador, denominador)
+
     @property
     def mostrar_fracao(self):
-        return f'{self.numerador}/{self.denominador}'
+        return f'{self.__numerador}/{self.__denominador}'
 
     @property
     def numerador(self):
         return self.__numerador
-    
+
     @property
     def denominador(self):
         return self.__denominador
@@ -363,6 +368,9 @@ class Fracao:
     def numerador(self, novo_numerador):
         self.__numerador = novo_numerador
 
+    def __str__(self):
+        return f'{self.__numerador/self.__denominador}'
+
 
 fracao1 = Fracao(78, 978)
 print(fracao1.mostrar_fracao)
@@ -370,3 +378,5 @@ fracao2 = Fracao(13, 9)
 print(fracao2.mostrar_fracao)
 # na hora de testar, testar uma operação por vez
 print(fracao1.calcular_valor_real())
+
+print(str(Fracao.criar_fracao_a_partir_de_um_numero_real(12.345)))
