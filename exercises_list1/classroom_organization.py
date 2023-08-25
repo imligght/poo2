@@ -1,3 +1,4 @@
+# classe para modelar um estudante
 class Student:
 
     def __init__(self, name:str, registration:int):
@@ -40,7 +41,7 @@ class Student:
     @property
     def school_days(self):
         return self.__school_days
- 
+
     @property
     def grades(self):
         return self.__grades
@@ -56,6 +57,7 @@ class Student:
     def __repr__(self):
         return f'Aluno(a): {self.__name}\nDias ausênte: {self.__missed_days}\nNotas: {self.__grades}'
 
+# classe para modelar uma turma
 class Classroom: 
 
     def __init__(self, class_id:str, teacher, students:list[Student]): 
@@ -94,7 +96,7 @@ class Classroom:
     def students_amount(self):
         return len(self.__students_belonging_to_the_class)
 
-
+# classe para modelar um professor
 class Professor:
 
     def __init__(self, name:str, discipline:str):
@@ -113,6 +115,7 @@ class Professor:
         return self.__discipline
 
 
+## TESTES
 # criando instancias de alunos para a realização de testes
 aluno1 = Student('Alex', 1)
 aluno2 = Student('Bob', 2)
