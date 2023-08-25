@@ -1,5 +1,5 @@
 import random
-
+# esta classe serve para modelar as cartas
 class Card:
     def __init__(self, naipe:str, value:str):
         self.__naipe = naipe
@@ -34,7 +34,7 @@ class Card:
         elif self.__naipe.lower() == 'espadas':
             return f'♠ {self.__naipe.title()}, {self.__value.title()}'
 
-
+# esta classe serve para agrupar cartas, formando um deck
 class Deck:
     def __init__(self, deck:list[Card]):
         self.__deck = deck
@@ -64,7 +64,7 @@ class Deck:
         return deck_str
 
 
-
+# caso de teste
 naipes = ['Ouros', 'Paus', 'Copas', 'Espadas']
 values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K']
 

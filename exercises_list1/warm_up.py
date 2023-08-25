@@ -346,7 +346,7 @@ class Fracao:
         numeros_apos_a_virgula = len(str(numero_real).split('.')[1])
         numerador = int(numero_real * 10 ** numeros_apos_a_virgula)
         denominador = int(10 ** numeros_apos_a_virgula)
-        return Fracao(numerador, denominador)
+        return cls(numerador, denominador)
 
     @property
     def mostrar_fracao(self):
@@ -369,14 +369,10 @@ class Fracao:
         self.__numerador = novo_numerador
 
     def __str__(self):
-        return f'{self.__numerador/self.__denominador}'
+        return f'{self.__numerador}/{self.__denominador}'
 
+fracao1 = Fracao(5, 3)
+fracao2 = Fracao(3, 2)
 
-fracao1 = Fracao(78, 978)
-print(fracao1.mostrar_fracao)
-fracao2 = Fracao(13, 9)
-print(fracao2.mostrar_fracao)
-# na hora de testar, testar uma operação por vez
-print(fracao1.calcular_valor_real())
-
-print(str(Fracao.criar_fracao_a_partir_de_um_numero_real(12.345)))
+print(fracao1.dividir(fracao2))
+print(Fracao.criar_fracao_a_partir_de_um_numero_real(1.148491))
