@@ -1,17 +1,15 @@
-import random
-
-vector = []
-for i in range(20):
-    vector.append(random.randint(0, 100))
-
-print(vector)
+numbers_vector = list(map(int, input('Digite aqui os 20 números inteiros separados por espaços: ').split()))
 even_vector = []
 odd_vector = []
-for i in vector:
-    if i % 2 == 0:
-        even_vector.append(i)
-    else:
-        odd_vector.append(i)
 
-print(f'Vetor de números pares: {even_vector}')
-print(f'Vetor de números ímpares: {odd_vector}')
+for number in numbers_vector:
+    if len(numbers_vector) != 20:
+        print('Favor fornecer exatamente 20 números.')
+        break
+    elif number % 2 == 0:
+        even_vector.append(number)
+    else:
+        odd_vector.append(number)
+
+print('Números pares: ', even_vector)
+print('Números ímpares: ', odd_vector)

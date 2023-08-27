@@ -1,13 +1,9 @@
-import random
+numbers = list(map(int, input('Insira aqui os 5 números separados por espaços: ').split()))
 
-vector = []
-for i in range(5):
-    vector.append(random.randint(0, 100))
-
-print(f'Números: {vector}')
-print(f'Soma do vetor: {sum(vector)}')
+print(f'Soma dos números do vetor: {sum(numbers)}')
 
 mult_result = 1
-for i in range(len(vector)):
-    mult_result *= vector[i]
-print(f'Multiplicação do vetor: {mult_result}')
+for number in numbers:
+    mult_result *= number
+
+print(f'Multiplicação dos números do vetor: {mult_result}')

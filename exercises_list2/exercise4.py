@@ -1,15 +1,14 @@
-import random
-
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 'w', 'x', 'y', 'z']
 vowels = ['a', 'e', 'i', 'o', 'u']
-vector = []
-for j in range(10):
-    i = random.randint(0, 22)
-    vector.append(alphabet[i])
+char_vector = input('Forneça os 10 caracteres separados por espaços: ').split()
+consonants_vector = []
 
-consonants_in_vector = []
-for i in range(len(vector)):
-    if vector[i] not in vowels:
-        consonants_in_vector.append(vector[i])
+if len(char_vector) != 10:
+    print('Favor fornecer exatamente 10 caracteres.')
+else:
+    for char in char_vector:
+        if len(char) != 1 or not char.isalpha():
+            print(f'O caractere {char} não é um caractere válido.')
+        elif char not in vowels:
+            consonants_vector.append(char)
 
-print(f'O vetor tem {len(consonants_in_vector)} consoantes. Sendo elas: {consonants_in_vector}')
+print(f'{len(consonants_vector)} dos caracteres que você forneceu são consoantes, sendo elas: {consonants_vector}')

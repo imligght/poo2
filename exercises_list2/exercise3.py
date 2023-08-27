@@ -1,9 +1,8 @@
-import random
+vector = list(map(float, input('Digite aqui as quatro notas separadas por um espaço: ').split()))
 
-vector = []
-for i in range(4):
-    vector.append(random.randint(0, 10))
-
-average = sum(vector) / len(vector)
-print(vector)
-print(average)
+if len(vector) != 4:
+    print('Favor inserir exatamente quatro notas.')
+else:
+    average = sum(vector) / len(vector)
+    print('Notas fornecidas: ', vector)
+    print('Média das notas: ', average)

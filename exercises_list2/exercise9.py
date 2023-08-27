@@ -1,11 +1,7 @@
-import random
+numbers_vector = list(map(int, input('Insira aqui os dez números separados por espaços: ').split()))
+squares_sum = 0
 
-numbers_vector = []
-for i in range(10):
-    numbers_vector.append(random.randint(0, 50))
-print('Vetor criado: ', numbers_vector)
-
-result = 0
 for i in numbers_vector:
-    result += i ** 2
-print('Soma dos quadrados dos elementos do vetor lido: ', result)
+    squares_sum += i ** 2
+
+print('A soma dos quadrados dos números lidos é ', squares_sum)
