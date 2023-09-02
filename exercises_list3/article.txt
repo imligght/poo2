@@ -1,0 +1,257 @@
+1
+MUNDO RUMO À SINGULARIDADE TECNOLÓGICA
+Fernando Alcoforado*
+Este artigo tem por objetivo apresentar a grande revolução representada pela
+singularidade tecnológica que poderá ocorrer no futuro. O que é Singularidade? Trata-se
+da característica daquilo que é singular: pouco frequente, fora do comum ou
+extraordinário. Singularidade tecnológica é a hipótese que considera o crescimento
+tecnológico desenfreado da super inteligência artificial. Segundo essa hipótese, a ação
+desenfreada de um agente inteligente atualizável com capacidade de auto-
+aperfeiçoamento (como um computador que executa inteligência artificial baseada em
+software) geraria cada vez mais rapidamente robôs dotados de uma super inteligência
+poderosa que, qualitativamente, poderia ultrapassar toda a inteligência humana.
+A utilização do termo "singularidade" se deu a partir da década de 1950, com John von
+Neumann, no sentido em que o progresso tecnológico estaria associado a uma mudança
+acelerada. O conceito de singularidade tecnológica foi proposto pela primeira vez pelo
+criptologista britânico Irving John Good em 1965. A singularidade tecnológica é
+alcançada quando uma máquina ultra-inteligente pode superar todas as atividades
+intelectuais de todo homem mais inteligente. Desde que uma máquina ultra-inteligente
+possa projetar até mesmo máquinas melhores haveria, sem dúvida, uma "explosão de
+inteligência", e a inteligência do homem seria deixada para trás. Assim, a primeira
+máquina ultra-inteligente seria a última invenção que o homem precisaria fazer.
+A hipótese segundo a qual a máquina poderia logo ultrapassar o homem tem um nome.
+Trata-se da “singularidade tecnológica”, um termo utilizado pela primeira vez no
+ensaio The Coming Technological Singularity (“A iminente singularidade
+tecnológica”), publicado pelo autor norte-americano de ficção científica Vernor Vinge
+em 1993. Ele designa uma data incerta na qual a inteligência artificial ultrapassará a
+nossa, inaugurando então uma nova era. O próprio Vinge teve seus precursores e
+inspiradores, desde as reflexões do matemático Stanislaw Ulam sobre a aceleração
+exponencial do progresso até os escritos de Isaac Asimov (The Last Question [“A
+última questão”], 1956) e de Philip K. Dick (A máquina de governar, 1960; A formiga
+elétrica, 1970), passando pelas hipóteses do estatístico Irving John Good sobre as
+máquinas ultrainteligentes.
+Elevada a problema-chave pelas indústrias do Vale do Silício e seus intelectuais
+orgânicos, a singularidade se transformou durante os anos 2000 em escola de
+pensamento. Alguns, como Raymond Kurzweil a veem como um acontecimento
+positivo e desejável. Embora esse otimismo seja minoritário, há concordância de que
+o avanço indiscutível e exponencial do progresso técnico torna a singularidade
+inevitável. Em vez de tentar impedi-la, seria importante preparar a humanidade para
+seu surgimento, de modo a limitar suas consequências negativas.
+Em 1950, o cientista da computação britânico Alan Turing já especulava sobre o
+surgimento de máquinas pensantes (thinking machines) em sua obra “Computing
+Machinery and Intelligence”, e o termo "inteligência artificial" (IA) foi cunhado, em
+1956, pelo cientista John McCarthy. Na década de 1990, a comunidade dedicada à
+inteligência artificial deixou de lado uma abordagem baseada na lógica, que envolvia criar
+regras para orientar um computador como agir, para uma abordagem estatística, usando
+bases de dados e pedindo para a máquina analisá-los e resolver problemas por conta
+2
+própria. Especialistas acreditam que a inteligência das máquinas se equiparará à de
+humanos até 2050, graças a uma nova era na sua capacidade de aprendizado.
+Computadores já estão começando a assimilar informações a partir de dados coletados.
+Isso significa que estamos criando máquinas que podem ensinar a si mesmas e também a
+se comunicar simulando a fala humana, como acontece com os smartphones e seus
+sistemas de assistentes virtuais.
+Uma rede neural de um sistema de Inteligência Artificial é capaz de analisar mais de um
+bilhão de dados em poucos segundos, sendo uma ferramenta incrível para apoiar um
+tomador de decisões dentro de uma organização, garantindo, assim, a melhor opção dentre
+as possíveis. Como os dados coletados são constantemente atualizados, os sistemas de
+Inteligência Artificial sempre atualizam, também, seus resultados, viabilizando que os
+gestores tenham acesso a informações recentes de variações ocorridas no ambiente de
+uma organização. O aprendizado de máquina (machine learning) é um campo de ciência
+da computação que dá aos computadores a capacidade de aprender sem serem
+explicitamente programados. Na análise de dados, o aprendizado de máquina é um
+método usado para conceber modelos e algoritmos complexos que se prestam à predição.
+Em uso comercial, isso é conhecido como análise preditiva. Esses modelos analíticos
+permitem que pesquisadores, cientistas de dados, engenheiros e analistas "produzam
+decisões e resultados confiáveis e repetíveis" e descobrem "insights ocultos" através da
+aprendizagem de relacionamentos históricos e tendências nos dados.
+Graças aos avanços na inteligência artificial, o mundo se encontra diante de gigantescas
+transformações. É uma nova era na qual as regras fundamentais que regulavam as
+atividades das organizações estão sendo reescritas. Sistemas de inteligência artificial não
+significam apenas a automação de muitos processos para fazê-los mais eficientes. Estes
+sistemas de Inteligência Artificial estão fazendo o mundo passar por uma transição
+fundamental com as máquinas se desenvolvendo além do seu histórico papel como
+ferramenta ao se transformarem em “trabalhadores autônomos”. Em consequência, os
+sistemas de Inteligência Artificial estão mudando, portanto, a verdadeira natureza do
+trabalho que está a exigir que a gestão das operações com máquinas e trabalhadores seja
+processada de forma bastante diferente em relação ao passado.
+Nos últimos anos, assistimos a progressos surpreendentes em áreas como aprendizagem
+independente, previsão, navegação autônoma, visão computacional e gameplay de vídeo.
+Os computadores agora podem fazer cálculos complexos de engenharia, negociar ações
+nas bolsas de valores na ordem de milissegundos, carros automatizados estão aparecendo
+cada vez mais em nossas ruas e assistentes artificialmente inteligentes invadiram nossas
+casas. Os próximos anos vão nos apresentar ainda mais avanços, com a Superinteligência
+Artificial através de máquinas que podem aprender com suas próprias experiências,
+adaptar-se a situações novas e compreender abstrações e analogias. A inteligência de
+máquina de nível humano tem boas chances de ser desenvolvida até a metade do século
+XXI da qual pode resultar a Superinteligência Artificial. A Superinteligência Artificial
+será a primeira tecnologia a superar potencialmente os humanos em todas as
+dimensões. Até agora, os seres humanos tiveram o monopólio da tomada de decisões e,
+portanto, tinham controle sobre tudo. Com a Superinteligência Artificial, isso pode
+acabar. Uma ampla gama de consequências poderá ocorrer, incluindo consequências
+extremamente boas e consequências tão ruins quanto a extinção da espécie humana.
+3
+2045 é o ano previsto para a singularidade tecnológica que marca o fim de uma era e o início
+de um novo ciclo humano, onde homem e máquina estarão integrados e onde a
+Inteligência Artificial supera e muito a inteligência humana. A tecnologia é a grande
+estrela da era digital, mas o homem continua sendo o personagem principal. Se o homem
+não evoluir através da tecnologia, ela não terá servido para nada. As técnicas que
+evoluíram no campo da inteligência artificial são similares às técnicas que o cérebro usa,
+segundo Raymond Kurzweil, o maior futurista do mundo. As máquinas aprendem tarefas
+humanas, e em 2029 inteligência artificial e humana serão iguais, e em 2045, uma única
+máquina será mais inteligente do que a humanidade inteira.
+A Superinteligência Artificial poderá contribuir decisivamente para o avanço científico e
+tecnológico visando dotar a humanidade dos recursos necessários para enfrentar as
+ameaças internas ao planeta Terra que ameaçam a sobrevivência da humanidade como
+pandemias e terremotos, bem como a mudança climática catastrófica que poderá ocorrer
+a partir de meados do século XXI. Além disso, poderá contribuir para realizar avanços
+científicos e tecnológicos (biotecnologia, nanotecnologia e neurotecnologia) para
+aumentar a capacidade cognitiva e superar limitações físicas e psicológicas dos seres
+humanos com base no transhumanismo.
+A evolução deu à humanidade a inteligência mais sofisticada do que qualquer animal do
+planeta e os humanos têm usado essa inteligência para superar seus déficits biológicos. O
+transhumanismo fala sobre usar essa dinâmica para não apenas impactar o mundo ao
+nosso redor, mas para aumentar ou mesmo substituir nossa biologia por
+tecnologia. Enquanto a humanidade corrigiu a visão deficiente com lentes corretivas,
+endireitou os dentes de uma pessoa com aparelhos, ou incontáveis outros exemplos de
+seres humanos alterando corpos ou sentidos através da tecnologia, o transhumanista
+quer substituir o olho inteiramente ou fazer transferências mentais.
+À medida que as tecnologias da computação avançam ao lado da biotecnologia, há uma
+crescente convergência entre as duas na forma de interfaces neurais que no futuro podem
+abrir a porta para vincular sua mente diretamente a uma Inteligência Artificial, a fim de
+facilitar maior aprendizado, transferência mental e superar condições neurológicas. Como
+fazer o ser humano melhorar significativamente em questão de décadas, ou mesmo de
+alguns anos? A resposta é o transhumanismo, movimento determinado a usar tecnologias
+revolucionárias para transformar a humanidade em algo superior. É importante levar em
+consideração que o transhumanismo traria consequências que influenciariam todas as
+áreas do conhecimento.
+A Superinteligência Artificial poderá contribuir, também, para o avanço científico e
+tecnológico visando dotar a humanidade dos recursos necessários para enfrentar as
+ameaças vindas do espaço sideral e os seres humanos para levá-los para novos habitats
+no sistema solar e fora dele em busca de sua sobrevivência com o impacto de asteroides,
+o afastamento da Lua em relação à Terra, com a colisão entre as galáxias Andrômeda e
+Via Láctea, a morte do Sol e o fim do Universo em que vivemos. Com máquinas mais
+inteligentes do que nós, com a Superinteligência Artificial, a humanidade poderá se
+utilizar delas para solucionar problemas científicos e tecnológicos que assegurem a
+sobrevivência da espécie humana até mesmo com o fim do Universo em que vivemos ao
+abrir caminho para universos paralelos.
+4
+Mesmo que a Superinteligência Artificial produza benefícios para a humanidade, há o
+risco de que ela seja utilizada para o mal e não para o bem da humanidade. A imediata
+consequência do progresso da inteligência artificial é o avanço do desemprego. Este efeito
+social negativo já está acontecendo e é inevitável porque resulta de forças econômicas
+que estão fora de controle. A inteligência artificial é positiva para o capitalista que fará
+uso dela para enfrentar seus concorrentes de forma mais competitiva haja vista que
+proporcionaria, entre outras vantagens, o aumento de sua produtividade e a redução de
+seus custos. No entanto, seria, também, extremamente negativa para o sistema capitalista
+porque tende a reduzir a renda à disposição da massa dos trabalhadores excluídos da
+produção contribuindo, desta forma, para a queda na demanda de produtos e serviços e,
+consequentemente, dos lucros auferidos. Seu impacto sobre a sociedade seria devastador
+com o desemprego em massa resultante de sua utilização em larga escala.
+Existem cenários extremamente negativos como o das próprias máquinas
+superinteligentes decidirem destruir os seres humanos, por exemplo, acabando com nossa
+civilização e infraestrutura. A Superinteligência Artificial pode representar a extinção da
+raça humana, segundo o cientista Stephen Hawking que publicou artigo abordando esta
+questão em 1º de maio de 2014 no jornal The Independent. Hawking afirmou que as
+tecnologias se desenvolvem em um ritmo tão vertiginoso que elas se tornarão
+incontroláveis ao ponto de colocar a humanidade em perigo. Hawking conclui: hoje,
+haveria tempo de parar; amanhã seria tarde demais. O desenvolvimento indiscriminado
+de uma inteligência artificial poderia indicar o fim da humanidade. Por ocasião da
+morte de Stephen Hawking, em março de 2018, essa famosa citação do astrofísico
+ecoou na imprensa e nas redes sociais. Durante muito tempo relegado aos registros da
+ficção científica, o medo da inteligência artificial está enraizado há alguns anos no
+debate público, associado tanto à automatização maciça das ocupações e ao
+desemprego em massa quanto à perspectiva não menos aterrorizante dos robôs
+assassinos.
+Do filósofo e pesquisador Nick Bostrom a Elon Musk, fundador das empresas Tesla e
+SpaceX, diversas personalidades multiplicam, assim, os alertas sobre o risco
+existencial que as máquinas “superinteligentes” e potencialmente incontroláveis fariam
+recair na humanidade. Para o dono da Tesla, seu perigo seria até maior que o da bomba
+atômica. Alguns teóricos, como Raymond Kurzweil, acham que o ritmo da inovação
+tecnológica está se acelerando e que os próximos 50 anos podem produzir não só avanços
+tecnológicos radicais, mas, possivelmente, uma singularidade tecnológica, o que pode
+mudar fundamentalmente a natureza dos seres humanos. Transumanistas que prevem esta
+mudança tecnológica maciça geralmente sustentam que é algo desejável. No entanto,
+alguns também estão preocupados com os possíveis perigos da mudança tecnológica
+extremamente rápida e propõem opções para garantir que a tecnologia avançada seja
+usada de forma responsável. Por exemplo, Nick Bostrom tem escrito extensivamente
+sobre os riscos existenciais para o futuro bem-estar da humanidade, incluindo aqueles que
+poderiam ser criados pelas tecnologias emergentes.
+Nick Bostrom afirma em seu livro Superintelligence que a Superinteligência Artificial
+representa um risco que ameaça a extinção prematura de vida inteligente na Terra, ou a
+destruição permanente e drástica de seu potencial para um desenvolvimento futuro
+desejável. Bostrom explicou que a Superinteligência Artificial requer que sejam
+desenvolvidos melhores mecanismos de controle. Bostrom afirma que precisaremos ter
+esses mecanismos de controle antes de criar os sistemas inteligentes atraindo os maiores
+5
+especialistas em matemática e ciência da computação para esse campo. Ele sugere que
+haja uma forte colaboração de pesquisa entre a comunidade de segurança e a de
+desenvolvimento da Superinteligência Artificial, e para que todas as partes envolvidas
+incorporem o Princípio do Bem Comum em todos os projetos de Inteligência Artificial
+de longo prazo. Esta é uma tecnologia única, disse Bostrom, que deve ser desenvolvida
+para o bem comum da humanidade.
+REFERÊNCIAS
+Agrawal, Ajay; Gans, Joshua e Goldfarb, Avi (2018). Prediction Machines. Boston:
+Harvard Business Review Press.
+Alcoforado, Fernando (2020). O advento da superinteligência artificial e seus impactos.
+Disponível no website
+<https://www.academia.edu/42148676/O_ADVENTO_DA_SUPERINTELIG%C3%8A
+NCIA_ARTIFICIAL_E_SEUS_IMPACTOS>, 06/03/2020.
+________________________. The advent of artificial super intelligence and its impacts.
+Disponível no website
+<https://www.academia.edu/42148665/THE_ADVENT_OF_ARTIFICIAL_SUPER_IN
+TELLIGENCE_AND_ITS_IMPACTS>, 06/03/2020.
+________________________. L'avent de la super intelligence artificielle et ses impacts.
+Disponível no website
+<https://www.academia.edu/42148651/LAVENT_DE_LA_SUPER_INTELLIGENCE_
+ARTIFICIELLE_ET_SES_IMPACTS>, 06/03/2020.
+________________________. O avanço da ciência e tecnologia e o futuro da
+humanidade. Disponível no website
+<https://www.academia.edu/43053314/O_AVAN%C3%87O_DA_CI%C3%8ANCIA_
+E_DA_TECNOLOGIA_E_O_FUTURO_DA_HUMANIDADE>, 14/05/2020.
+________________________. The advancement of science and technology and the
+future of humanity. Disponível no website
+<https://www.academia.edu/43053054/THE_ADVANCEMENT_OF_SCIENCE_AND
+_TECHNOLOGY_AND_THE_FUTURE_OF_HUMANITY>, 14/05/2020.
+________________________. L´avancement de la science et de la technologie et lavenir
+de l´humanité . Disponível no website
+<https://www.academia.edu/43053047/LAVANCEMENT_DE_LA_SCIENCE_ET_DE
+_LA_TECHNOLOGIE_ET_LAVENIR_DE_LHUMANITE>, 14/05/2020.
+Bostrom, Nick (2014). Superintelligence: Paths, Dangers,
+Strategies [Superinteligência: caminhos, perigos, estratégias], Oxford University
+Press.
+Brynjolfsson, Erik e McAfeee, Andrew. The second machine age. New York: Norton
+paperback, 2016.
+Dormehl, Luke. Thinking Machines. New York: Tarcher Perigee Book, 2017.
+6
+Ford, Martin Rise of the Robots. New York: Basic Books, 2016.
+Ganascia, Jean-Gabriel (2017). Le Mythe de la singularité. Faut-il craindre
+l’intelligence artificielle? [O mito da singularidade. Será que é preciso temer a
+inteligência artificial?], Seuil, Paris.
+Kaplan, Jerry. Artificial Intelligence. New York: Oxford University Press, 2016.
+Pflimlin, Édouard (2017). “Les Nation unies contre Terminator” [As Nações Unidas
+contra o Exterminador], Le Monde Diplomatique, mar. 2017.
+Weigel, Jaqueline (2017). Singularidade tecnológica e o destino da humanidade. Disponível no
+website <https://wfuturismo.com/2017/07/25/singularidade-tecnologica-e-o-destino-da-
+humanidade/?gclid=CjwKCAjw8J32BRBCEiwApQEKgQg5R_xrUdaRuY-
+MUEH7ch8YG6VTWzCcb2uo2OUIxh1LZxclAi98NhoCpckQAvD_BwE>.
+* Fernando Alcoforado, 80, condecorado com a Medalha do Mérito da Engenharia do Sistema
+CONFEA/CREA, membro da Academia Baiana de Educação, engenheiro e doutor em Planejamento
+Territorial e Desenvolvimento Regional pela Universidade de Barcelona, professor universitário e consultor
+nas áreas de planejamento estratégico, planejamento empresarial, planejamento regional e planejamento de
+sistemas energéticos, é autor dos livros Globalização (Editora Nobel, São Paulo, 1997), De Collor a FHC-
+O Brasil e a Nova (Des)ordem Mundial (Editora Nobel, São Paulo, 1998), Um Projeto para o Brasil
+(Editora Nobel, São Paulo, 2000), Os condicionantes do desenvolvimento do Estado da Bahia (Tese de
+doutorado. Universidade de Barcelona,http://www.tesisenred.net/handle/10803/1944, 2003),
+Globalização e Desenvolvimento (Editora Nobel, São Paulo, 2006), Bahia- Desenvolvimento do Século XVI
+ao Século XX e Objetivos Estratégicos na Era Contemporânea (EGBA, Salvador, 2008), The Necessary
+Conditions of the Economic and Social Development- The Case of the State of Bahia (VDM Verlag Dr.
+Müller Aktiengesellschaft & Co. KG, Saarbrücken, Germany, 2010), Aquecimento Global e Catástrofe
+Planetária (Viena- Editora e Gráfica, Santa Cruz do Rio Pardo, São Paulo, 2010), Amazônia Sustentável-
+Para o progresso do Brasil e combate ao aquecimento global (Viena- Editora e Gráfica, Santa Cruz do Rio
+Pardo, São Paulo, 2011), Os Fatores Condicionantes do Desenvolvimento Econômico e Social (Editora
+CRV, Curitiba, 2012), Energia no Mundo e no Brasil- Energia e Mudança Climática Catastrófica no
+Século XXI (Editora CRV, Curitiba, 2015), As Grandes Revoluções Científicas, Econômicas e Sociais que
+Mudaram o Mundo (Editora CRV, Curitiba, 2016), A Invenção de um novo Brasil (Editora CRV, Curitiba,
+2017), Esquerda x Direita e a sua convergência (Associação Baiana de Imprensa, Salvador, 2018, em co-
+autoria) e Como inventar o futuro para mudar o mundo (Editora CRV, Curitiba, 2019).
