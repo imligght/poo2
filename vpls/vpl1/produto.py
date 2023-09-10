@@ -1,40 +1,5 @@
-class Cliente:
-    def __init__(self, nome:str, fone:str):
-        self.__nome = nome
-        self.__fone = fone
-
-    @property
-    def nome(self):
-        return self.__nome
-
-    @nome.setter
-    def nome(self, nome):
-        self.__nome = nome
-
-    @property
-    def fone(self):
-        return self.__fone
-
-    @fone.setter
-    def fone(self, fone):
-        self.__fone = fone
-
-
-class CategoriaProduto:
-    def __init__(self, titulo:str):
-        self.__titulo = titulo
-
-    @property
-    def titulo(self):
-        return self.__titulo
-
-    @titulo.setter
-    def titulo(self, titulo):
-        self.__titulo = titulo
-
-
 class Produto:
-    def __init__(self, codigo:int, descricao:str, categoria:str):
+    def __init__(self, codigo: int, descricao: str, categoria: str):
         self.__codigo = codigo
         self.__descricao = descricao
         self.__categoria = categoria
@@ -69,7 +34,7 @@ class Produto:
     @property
     def quantidade(self):
         return self.__quantidade
-    
+
     @quantidade.setter
     def quantidade(self, quantidade):
         self.__quantidade = quantidade
