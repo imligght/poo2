@@ -5,7 +5,6 @@ from tecnico import Tecnico
 
 class ControladorPessoas(AbstractControladorPessoas):
     def __init__(self):
-        super().__init__()
         self.__clientes = []
         self.__tecnicos = []
 
@@ -19,12 +18,22 @@ class ControladorPessoas(AbstractControladorPessoas):
 
     def incluiCliente(self, codigo: int, nome: str) -> Cliente:
         cliente = Cliente(nome, codigo)
-        if cliente not in self.__clientes:
+        client_already_exists = False
+        for client in self.__clientes:
+            if client.codigo == cliente.codigo:
+                client_already_exists = True
+                break
+        if not client_already_exists:
             self.__clientes.append(cliente)
         return cliente
 
     def incluiTecnico(self, codigo: int, nome: str) -> Tecnico:
         tecnico = Tecnico(nome, codigo)
-        if tecnico not in self.__tecnicos:
+        technician_already_exists = False
+        for technician in self.__tecnicos:
+            if technician.codigo == tecnico.codigo:
+                technician_already_exists = True
+                break
+        if not technician_already_exists:
             self.__tecnicos.append(tecnico)
         return tecnico

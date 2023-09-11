@@ -8,11 +8,17 @@ class Pessoa(AbstractPessoa, ABC):
         self.__codigo = codigo
 
     @property
-    @abstractmethod
-    def nome(self) -> str:
+    def nome(self):
         return self.__nome
 
     @property
-    @abstractmethod
-    def codigo(self) -> int:
+    def codigo(self):
         return self.__codigo
+
+    @nome.setter
+    def nome(self, nome: str):
+        self.__nome = nome
+
+    @codigo.setter
+    def codigo(self, codigo: int):
+        self.__codigo = codigo

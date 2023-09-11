@@ -3,13 +3,11 @@ from pessoa import Pessoa
 
 class Cliente(Pessoa):
     def __init__(self, nome: str, codigo: int):
-        self.__nome = nome
-        self.__codigo = codigo
+        super().__init__(nome, codigo)
 
-    @property
-    def nome(self) -> str:
-        return self.__nome
-
-    @property
-    def codigo(self) -> int:
-        return self.__codigo
+    def __eq__(self, other_object) -> bool:
+        if isinstance(other_object, Cliente):
+            return (
+                id(self) == id(other_object)
+            )
+        return False
